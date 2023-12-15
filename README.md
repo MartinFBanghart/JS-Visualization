@@ -4,4 +4,4 @@ This was an attempt to create visualizations using HTML/CSS/JavaScript opposed t
 The visualization is thematic and incorporates data from the country of Ecuador to draw conclusions regarding recent deforestation and CO2 emissions.
 
 ## End Product
-![](https://github.com/MartinFBanghart/JS-Visualization/visualization_GIF.png)
+![til](https://github.com/MartinFBanghart/JS-Visualization/visualization_GIF.png)
