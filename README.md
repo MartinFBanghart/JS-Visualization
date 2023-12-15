@@ -5,3 +5,5 @@ The visualization is thematic and incorporates data from the country of Ecuador 
 
 ## End Product
 ![hippo](https://github.com/MartinFBanghart/JS-Visualization/visualization_GIF.png)
+
+<img src="./assets/visualization_GIF.png"/>
