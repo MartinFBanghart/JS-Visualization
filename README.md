@@ -5,4 +5,3 @@ The visualization is thematic and incorporates data from the country of Ecuador 
 
 ## End Product
 ![Visualization-GIF](https://github.com/MartinFBanghart/JS-Visualization/blob/main/visualization_GIF.png)
-
