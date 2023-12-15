@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualization of Complex Data - Final Project</title>
+    <script type="module" src="./Scripts/forest-area-chart.js"></script>
+    <script type="module" src="./Scripts/woods-export-chart.js"></script>
+    <script
+      type="module"
+      src="./Scripts/annual-co2-emissions-chart.js"
+    ></script>
+    <script
+      type="module"
+      src="./Scripts/yearly-sequestration-potential-chart.js"
+    ></script>
+    <script
+      type="module"
+      src="./Scripts/ytd-emissions-vs-potential-sequestration-chart.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- ------VISUALIZATION 1 BELOW------ -->
+
+      <figure class="chart">
+        <div class="chart-meta">
+          <div class="chart-hed">
+            Ecuador faces concerns of increasing deforestation
+          </div>
+        </div>
+
+        <div class="columns">
+          <div>
+            <div class="chart-dek">
+              In the past three decades forest area has decreased by hundreds of
+              thousands of hectares ...
+            </div>
+
+            <div class="viz-1-graph-1"></div>
+          </div>
+
+          <div>
+            <div class="chart-dek">
+              ... the cause is likely heavily linked to the country's increasing
+              export of wood among other factors
+            </div>
+
+            <div class="viz-1-graph-2"></div>
+          </div>
+        </div>
+
+        <div class="chart-footer">
+          <div class="chart-notes">
+            <div class="chart-note">
+              *2020 export values may be reflective of a global trade decline
+              due to the Covid pandemic
+            </div>
+          </div>
+          <div class="chart-source">
+            Source: Food and Agriculture Organization of the United States
+            (FRA); The Observatory of Economic Complexity (OEC)
+          </div>
+        </div>
+      </figure>
+
+      <!-- ------VISUALIZATION 1 ABOVE------ -->
+
+      <!-- look to capture relation to a specific loss from first graph to show how much was -->
+      <!-- lost in a given year -->
+
+      <!-- ------SIZE COMPARISON GRAPHIC BELOW------ -->
+      <figure class="chart">
+        <div class="chart-meta">
+          <div class="chart-hed">
+            To understand the gravity of how much land is being lost, consider
+            these familiar landmarks
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="chart-dek">
+              Approximately the square of the length of 1 football field equals
+              1 hectare...
+            </div>
+
+            <div class="hectare-example">
+              <svg width="425" height="425">
+                <!-- Hectare Boundary -->
+                <rect
+                  x="10"
+                  y="10"
+                  width="350"
+                  height="350"
+                  stroke="black"
+                  stroke-dasharray="5,5"
+                  fill="none"
+                />
+
+                <!-- Football Field Boundary -->
+                <rect
+                  x="10"
+                  y="10"
+                  width="320"
+                  height="150"
+                  stroke="#f5f5eb"
+                  stroke-width="2"
+                  fill="green"
+                />
+
+                <!-- End Zone Boundaries -->
+                <rect
+                  x="10"
+                  y="10"
+                  width="15"
+                  height="150"
+                  stroke="#f5f5eb"
+                  stroke-width="1.75"
+                  fill="#005000"
+                />
+                <rect
+                  x="325"
+                  y="10"
+                  width="15"
+                  height="150"
+                  stroke="#f5f5eb"
+                  stroke-width="1.75"
+                  fill="#005000"
+                />
+
+                <!-- 10 year markers -->
+                <line
+                  x1="40"
+                  y1="10"
+                  x2="40"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="55"
+                  y1="10"
+                  x2="55"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="70"
+                  y1="10"
+                  x2="70"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="85"
+                  y1="10"
+                  x2="85"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="100"
+                  y1="10"
+                  x2="100"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="115"
+                  y1="10"
+                  x2="115"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="130"
+                  y1="10"
+                  x2="130"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="145"
+                  y1="10"
+                  x2="145"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="160"
+                  y1="10"
+                  x2="160"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="175"
+                  y1="10"
+                  x2="175"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="190"
+                  y1="10"
+                  x2="190"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="205"
+                  y1="10"
+                  x2="205"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="220"
+                  y1="10"
+                  x2="220"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="235"
+                  y1="10"
+                  x2="235"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="250"
+                  y1="10"
+                  x2="250"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="265"
+                  y1="10"
+                  x2="265"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="280"
+                  y1="10"
+                  x2="280"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="295"
+                  y1="10"
+                  x2="295"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+                <line
+                  x1="310"
+                  y1="10"
+                  x2="310"
+                  y2="160"
+                  stroke="#f5f5eb"
+                  stroke-width="1.25"
+                />
+
+                <!-- dimensions -->
+                <line
+                  x1="10"
+                  y1="380"
+                  x2="360"
+                  y2="380"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <line
+                  x1="10"
+                  y1="370"
+                  x2="10"
+                  y2="390"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <line
+                  x1="360"
+                  y1="370"
+                  x2="360"
+                  y2="390"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <text
+                  class="svg-text"
+                  x="390"
+                  y="185"
+                  font-family="Arial"
+                  font-size="14"
+                  fill="black"
+                >
+                  100m
+                </text>
+
+                <line
+                  x1="380"
+                  y1="10"
+                  x2="380"
+                  y2="360"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <line
+                  x1="370"
+                  y1="10"
+                  x2="390"
+                  y2="10"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <line
+                  x1="370"
+                  y1="360"
+                  x2="390"
+                  y2="360"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <text
+                  class="svg-text"
+                  x="165"
+                  y="400"
+                  font-family="Arial"
+                  font-size="14"
+                  fill="black"
+                >
+                  100m
+                </text>
+
+                <text
+                  class="svg-text"
+                  x="165"
+                  y="225"
+                  font-family="Arial"
+                  font-size="26"
+                  fill="black"
+                >
+                  1 ha
+                </text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="chart-dek">
+              ... and 1 kilo hectare (Ecuador's avg. loss per decade) is
+              equivalent to 2470 football fields or 3 central parks!
+            </div>
+
+            <div class="central-park-comparison">
+              <img
+                src="./Images/simple_central_park_map.svg"
+                alt="Your SVG Image"
+                width="135"
+                height="375"
+              />
+              <text class="viz-2-example-text"> + </text>
+              <img
+                src="./Images/simple_central_park_map.svg"
+                alt="Your SVG Image"
+                width="135"
+                height="375"
+              />
+              <text class="viz-2-example-text"> + </text>
+              <img
+                src="./Images/simple_central_park_map.svg"
+                alt="Your SVG Image"
+                width="135"
+                height="375"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-footer">
+          <div class="chart-notes">
+            <div class="chart-note">
+              Note: dimensions are not to scale; figures are representative
+              examples; Central Park is located between Upper West Side and
+              Upper East Side of Manhattan, NYC
+            </div>
+          </div>
+          <div class="chart-source">Source: Central Park Conservancy</div>
+        </div>
+      </figure>
+
+      <!-- ------SIZE COMPARISON GRAPHIC ABOVE------ -->
+
+      <!-- ------VISUALIZATION 2 BELOW------ -->
+      <figure class="chart">
+        <div class="chart-meta">
+          <div class="chart-hed">
+            An impact of this loss may be the growth of annual CO2 emissions for
+            the country
+          </div>
+        </div>
+
+        <!-- <div class = "columns"> -->
+
+        <div>
+          <div class="chart-dek">
+            The late 2010s depict a gradual decline of the rate of increase of
+            emissions but recent years could foreshadow an incoming spike
+          </div>
+
+          <div class="viz-2-graph"></div>
+        </div>
+
+        <!-- </div> -->
+
+        <div class="chart-footer">
+          <div class="chart-notes">
+            <div class="chart-note"></div>
+          </div>
+
+          <div class="chart-source">
+            Source: Our World in Data (Ecuador CO2 Profile)
+          </div>
+        </div>
+      </figure>
+
+      <!-- ------VISUALIZATION 2 ABOVE------ -->
+
+      <!-- ------VISUALIZATION 3 BELOW------ -->
+
+      <figure class="chart">
+        <div class="chart-meta">
+          <div class="chart-hed">
+            Significant potential savings in CO2 emissions have been lost due to
+            previous deforestation
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column">
+            <div class="chart-dek">
+              Despite an overall decrease in the theoretical CO2 sequestration
+              rates* over the last 20 years ...
+            </div>
+
+            <div class="viz-3-graph-1"></div>
+          </div>
+
+          <div class="column">
+            <div class="chart-dek">
+              ... the compounding effect of how much CO2 said trees might have
+              recycled overtime is shockingly large
+            </div>
+
+            <div class="viz-3-graph-2"></div>
+          </div>
+        </div>
+
+        <div class="chart-footer">
+          <div class="chart-notes">
+            <div class="chart-note">
+              *CO2 sequestration is defined as 11 tonnes CO2 per hectare of
+              tropical forest
+            </div>
+            <div class="chart-note">
+              Note: Sequestration refers to the process in which a tree converts
+              CO2 (and other products) into glucose via photsynthesis with
+              oxygen a biproduct
+            </div>
+          </div>
+
+          <div class="chart-source">
+            Source: Our World in Data (Ecuador CO2 Profile); Fiscal Policy to
+            Mitigate Climate Change, Chapter 5:
+            <i>Forest Carbon Sequestration</i> - R. Mendelsohn
+          </div>
+        </div>
+      </figure>
+
+      <!-- ------VISUALIZATION 3 ABOVE------ -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=Poppins:wght@300&family=Rubik&display=swap");
+
+/* Setting attribute variables */
+
+:root {
+  --my-font-sans: "DM Sans", Arial, sans-serif;
+  --hed-font-size: 34px;
+  --dek-font-size: 20px;
+  --desc-font-size: 16px;
+  --note-source-font-size: 14px;
+
+  --chart-spacing: 40px;
+  --hed-bottom-padding: 10px;
+  --dek-bottom-padding: 15px;
+  --notes-spacing: 15px;
+
+  --chart-color-grey: rgb(100, 100, 100);
+  --chart-color-darkgrey: rgb(61, 61, 61);
+}
+
+/* Creating container and column scheme for text and graphic */
+
+.container {
+  width: 1150px;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.column {
+  flex: 1;
+}
+
+.chart-graphic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.chart {
+  padding-bottom: var(--chart-spacing);
+}
+
+/* Setting parameters for different text elements of charts */
+
+.chart-hed {
+  font-size: var(--hed-font-size);
+  font-family: var(--my-font-sans);
+  font-weight: 600;
+  padding-bottom: var(--hed-bottom-padding);
+}
+
+.chart-dek {
+  font-size: var(--dek-font-size);
+  font-family: var(--my-font-sans);
+  font-weight: 400;
+  padding-bottom: var(--dek-bottom-padding);
+}
+
+.chart-desc {
+  font-size: var(--desc-font-size);
+  font-family: var(--my-font-sans);
+  font-weight: 300;
+}
+
+.chart-notes {
+  padding-top: var(--notes-spacing);
+}
+
+.chart-note {
+  font-size: var(--note-source-font-size);
+  font-family: var(--my-font-sans);
+  font-weight: 100;
+  opacity: 0.65;
+}
+
+.chart-source {
+  font-size: var(--note-source-font-size);
+  font-family: var(--my-font-sans);
+  font-weight: 100;
+  opacity: 0.65;
+}
+
+/* ------- Common chart properties ------- */
+
+.tickline {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.tickline-zero {
+  stroke: black;
+  stroke-width: 1.75px;
+}
+
+.xtick {
+  stroke: black;
+  dominant-baseline: hanging;
+  text-anchor: middle;
+}
+
+.ytick {
+  stroke: var(--chart-color-grey);
+  transform: translateY(-4px);
+  text-anchor: end;
+}
+
+.ytick-unit {
+  stroke: var(--chart-color-grey);
+  transform: translate(-4px, -4px);
+}
+
+.ytick-unit-2 {
+  stroke: var(--chart-color-grey);
+  transform: translate(-4px, -4px);
+}
+
+.line-mark {
+  fill: none;
+  stroke-width: 2px;
+  stroke: black;
+}
+
+.barlabel {
+  stroke: var(--chart-color-darkgrey);
+  dominant-baseline: middle;
+  font-weight: 100;
+}
+
+.chart-label {
+  font-family: var(--my-font-sans);
+  font-size: 14px;
+}
+
+
+/* Properties for first visualization - 2nd chart (Bar) */
+
+.covid-year {
+  fill: grey;
+}
+
+.overlay-text {
+  font-family: var(--my-font-sans);
+  fill: white;
+  fill-opacity: 75%;
+}
+
+/* Properties for second visualization - svg created images */
+
+.hectare-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-park-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-text {
+  font-family: var(--my-font-sans);
+}
+
+.viz-2-example-text {
+  font-family: var(--my-font-sans);
+  font-size: 24px;
+}
+
+/* Properties for third visualization */
+
+.lollipop-line {
+  stroke: grey;
+  stroke-width: 3.5px;
+}
+
+.annotations {
+  font-family: var(--my-font-sans);
+  fill: white;
+}
